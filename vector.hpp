@@ -1,4 +1,7 @@
-// 我就直接把大作业的manual抄下来了…
+/**
+ * almost the same as STLit's manual
+ * only added function vector(const fstream &f)
+ */
 
 template<typename T>
 class vector {
@@ -87,8 +90,8 @@ public:
 	vector(const vector &other) {}
 	vector(const fstream &f) {
 		/**
-		 * 从 fstream f 中读取磁盘上的数据
-		 * 析构的时候写回 f
+		 * import data from fstream f
+		 * export data to f when destruct this vector
 		 */
 	}
 	/**
